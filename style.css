@@ -1,0 +1,151 @@
+*{padding: 0; margin: 0;}
+
+@font-face{
+    font-family: digital;
+    src: url("DS-DIGIT.TTF"); 
+}
+
+p{
+    text-decoration:underline;
+    font-weight: bolder;
+    color: mediumturquoise;
+    
+}
+
+#bd{
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cx{
+    width: 60vw;
+    height: 25vw;
+    border: solid 5px aqua;
+    border-radius: 30px;
+    background-color: black;
+    color:mediumturquoise;
+    font-size: 12vw;
+    font-family: digital;
+    font-weight: bolder;
+}
+
+.dt{
+    justify-content: space-between;
+    margin-top: 3%;
+    width: 55vw;
+    height: 22%;
+    font-size: 3.2vw;
+    font-family: digital;
+    color: mediumturquoise;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.data{
+    width: 45%; 
+    height: 100%;
+    border: solid 3px aqua;
+    border-radius: 15px;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.borda{
+    background-color: dimgrey; 
+    flex-direction: column;
+    border: solid 7px rgb(63, 141, 231);
+    border-radius: 10px;
+    width: 60vw;
+    height: 32vw;
+    padding: 2%;
+}
+
+.data:hover{
+    background-color:mediumturquoise;
+    border: solid 3px black;
+    color: black;
+}
+
+.cx:hover{
+    background-color:mediumturquoise;
+    border: solid 5px black;
+    font-size: 16vw;
+    color: black;
+}
+
+.despert:hover{
+    background-color:mediumturquoise;
+    border: solid 3px black;
+    color: black;
+}
+
+.form{
+    background-color: cadetblue;
+    width: 20vw;
+    height: 45%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: 2vw;
+    border: solid 7px rgb(63, 141, 231);
+    background-color: dimgrey;
+}
+
+.master{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 20vw;
+    height: 45vw;
+}
+
+.despert{
+    width: 90%;
+    height: 15%;
+    border: solid 3px aqua;
+    border-radius: 15px;
+    background-color: black;
+    color: mediumturquoise;
+    font-size: 3vw;
+}
+
+.cron{
+    height: 12%;
+    width: 65%;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 600px){
+    #bd{flex-direction: column; 
+        justify-content: space-evenly;
+    }
+    .form{
+        width: 40vw;
+        height: 40%;
+    }
+    .master{
+        height: 90vw;
+    }
+    .borda{
+        height: 60vw;
+        justify-content: space-around;
+    }
+    .cx{
+        height: 20vw;
+    }
+}
