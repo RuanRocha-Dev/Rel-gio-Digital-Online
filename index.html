@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="#">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Relógio digital Online</title>
 </head>
 <body id="bd">
@@ -27,7 +26,7 @@
             <input type="number" name="hora" id="hora" class="set despert">
             <label for="minutos">MINUTOS:</label>
             <input type="number" name="minutos" id="minutos" class="set despert">
-            <input type="button" value="DEFINIR" class="set despert cron" onclick="definir()">
+            <input type="button" value="DEFINIR" class="set despert cron" id="botao">
         </section>
         <section class="set form">
             <p>CRONÔMETRO</p>
@@ -37,5 +36,6 @@
             <input type="button" value="ZERAR" class="set despert cron" onclick="zerar()">
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
